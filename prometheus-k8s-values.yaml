@@ -609,11 +609,11 @@ server:
   ## https://prometheus.io/docs/prometheus/latest/configuration/configuration/#remote_write
   ##
   remoteWrite:
-    - url: "http://192.168.241.143:9201/write"
+    - url: "http://192.168.241.143:8086/api/v1/prom/write?db=prometheus"
   ## https://prometheus.io/docs/prometheus/latest/configuration/configuration/#remote_read
   ##
   remoteRead:
-    - url: "http://192.168.241.143:9201/read"
+    - url: "http://192.168.241.143:8086/api/v1/prom/read?db=prometheus"
 
 
   ## Additional Prometheus server container arguments
